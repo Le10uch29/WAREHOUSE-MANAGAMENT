@@ -1,0 +1,26 @@
+/*1200*/
+/*login*/
+@media(max-width: 1600px) {
+
+    .container {
+        padding: 70px 150px;
+    }
+
+    .login-container {
+        padding: 30px;
+        min-height: 494px;
+        width: 630px;
+    }
+
+    /*register*/
+    .login-reg {
+        padding: 30px;
+        box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, .1);
+        min-height: 710px;
+        width: 560px;
+        border-radius: 15px;
+    }
+
+    
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/product-add.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <script defer src="./js/aside.js"></script>
+    <script defer src="./js/add-product.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <title>Add Product</title>
+</head>
+
+<body>
+
+    <aside class="aside" id="aside"> </aside>
+
+    <main id="main-content">
+        <section id="add-product">
+            <div class="col-lg-11  col-md-10 col-sm-8  container-fluid add-product__container">
+                <h2 class="add-product__title">Add Products</h2>
+                <p class="add-product__descr">Product &gt; Add Products</p>
+                <div class="add-product__form-control">
+                    <form class="add-product__form" id="addProductForm">
+                        <div class="add-product__left-inputs">
+                            <div class="add-product__input-control">
+                                <label for="productName"><span>Product Name</span>
+                                    <input type="text" class="add-product__input" placeholder="Product Name"
+                                        id="productName">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" class="add-product__input" id="quantity">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="pricePerUnit">Price per Unit</label>
+                            <input type="number" class="add-product__input" id="pricePerUnit"
+                                placeholder="pricePerUnit">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="unitPrice">Unit Price</label>
+                            <input type="number" class="add-product__input" id="unitPrice" placeholder="0">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="productTYye">Quality Check</label>
+                            <input type="text" class="add-product__input" id="qualityCheck">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="deliveryDate">Delivery Date</label>
+                            <input type="date" class="add-product__input" id="deliveryDate">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="date" class="add-product__input" id="expiryDate">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="manufactureDate">Manufacture Date</label>
+                            <input type="number" class="add-product__input" id="manufactureDate" placeholder="0">
+                        </div>
+                        <div class="add-product__input-control">
+                            <label for="manufactureDate">Warehouse Id</label>
+                            <input type="number" class="add-product__input" id="warehouseId" placeholder="0">
+                        </div>
+
+
+
+                        <div class="add-product__input-control add-product__input-control-img">
+                            <div class="upload-files-container">
+                                <div class="drag-file-area" id="dropZone">
+                                    <h3 class="dynamic-message">Drop product image here</h3>
+                                    <p>Or</p>
+                                    <label class="browse-files">
+                                        <input type="file" class="default-file-input" accept="image/jpeg, image/png"
+                                            id="imageinput">
+                                        <span class="browse-files-text btn btn-primary">Browse File</span>
+                                    </label>
+                                    <p class="file-format-info">Allowed JPEG, JPG &amp;&nbsp;PNG format&nbsp;| Max
+                                        100&nbsp;mb</p>
+                                </div>
+                                <span class="cannot-upload-message">
+                                    <span class="material-icons-outlined">error</span> Please select a&nbsp;file first
+                                    <span class="material-icons-outlined cancel-alert-button">cancel</span>
+                                </span>
+                                <div class="file-block">
+                                    <div class="file-info">
+                                        <span class="material-icons-outlined file-icon">description</span>
+                                        <span class="file-name"></span> | <span class="file-size"></span>
+                                    </div>
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add-product__btn btn-reset" id="productBtn">Create Product</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

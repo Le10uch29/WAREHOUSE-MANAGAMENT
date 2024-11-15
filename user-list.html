@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/user-list.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <script defer src="./js/aside.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/usersList.js"></script>
+    <title>User List</title>
+</head>
+
+<body>
+    <aside class="aside" id="aside"> </aside>
+    <main id="main-content">
+        <section id="user-list">
+            <div class="container user-list__container">
+                <h2 class="user-list__container">
+                    User List
+                </h2>
+                <p class="user-list__descr">User List</p>
+                <div class="user-list__users-box">
+                    <a href="./user-add.html" class="user-list__link"><span>Add User</span></a>
+                    <button type="button" class="user-list__btn btn-reset" id="deleteBtn">Delete User</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="users-list">
+            <div class="container users-list__container">
+                <div class="users-list__header">
+                    <form class="users-list__search-form" id="userSearchForm">
+                        <input type="text" id="searchInput" placeholder="Search here" class="users-list__search">
+                    </form>
+                    <div class="users-list__box">
+                        <button class="btn-reset"><img src="./img/pdf-file.png" alt="pdf-file" id="pdf"></button>
+                        <button class="btn-reset"><img src="./img/csv.png" alt="scv-file" id="scv"></button>
+                        <button class="btn-reset"><img src="./img/printer.png " alt="print" id="print"></button>
+                    </div>
+                </div>
+                <table class="users-list__table" id="usersTable">
+                    <thead class="users-list__thead">
+                        <tr class="user-list__items">
+                            <th class="users-list__borderless  users-list__borderless-Checkbox" scope="col">
+                                <input type="checkbox" class="users-list__checkbox" id="usersListCheckbox">
+                            </th>
+                            <th class="users-list__borderless" scope="col">SL</th>
+                            <th class="users-list__borderless" scope="col">Name</th>
+                            <th class="users-list__borderless" scope="col">Phone</th>
+                            <th class="users-list__borderless" scope="col">Email</th>
+                            <th class="users-list__borderless" scope="col">Role</th>
+                            <th class="users-list__borderless" scope="col">Status</th>
+                            <th class="users-list__borderless" scope="col">Position</th>
+                            <th class="users-list__borderless" scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="users-list__table-body" id="usersTableBody">
+                        <!-- Users List -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

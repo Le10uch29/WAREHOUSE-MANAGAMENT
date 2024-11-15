@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-reg">
+            <figure class="figure-logo">
+                <img src="./img/LOGO.png" alt="WAREHOUSE MANAGAMENT logo" class="logo">
+                <figcaption>
+                    <h2 class="title">WAREHOUSE MANAGAMENT</h2>
+                </figcaption>
+            </figure>
+            <form id="addUserForm" class="registration-form" action="./index.html" method="post">
+                <div class="input-group">
+                    <input type="text" id="addName" class="input-reg input-user" placeholder="Name" name="Name"
+                        required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="addUserName" placeholder="Username" name="addUsername"
+                        class="input-reg input-user" required>
+                </div>
+                <div class="input-group">
+                    <input class="input-reg input-mail" type="text" id="addEmail" name="Email" placeholder="Email"
+                        required>
+                </div>
+                <div class="input-group">
+                    <input class="input-reg input-phone" type="phone" id="addPhone" name="Phone" placeholder="Phone"
+                        required>
+                </div>
+                <div class="block">
+                    <select class="block-select input-reg" id="addRole" name="Select Role" data-text="Select Role">
+                        <option value="0" style="display: none;">Select Role</option>
+                        <option value="1">Admin</option>
+                        <option value="2">Staff</option>
+                        <option value="3">Customer</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <div class="password-wrapper">
+                        <input class="input-reg" type="password" id="password" name="newPassword" placeholder="Password" required>
+                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    </div>
+                </div>
+                <button class="btn-reset reg-btn" type="submit" id="regBtn">Register</button>
+            </form>
+            <div id="registerMessage"></div>
+            <p class="link-descr">Already have an account? <a href="./login.html">Login</a> </p>
+        </div>
+    </div>
+    <script defer src="./js/login.js"></script>
+
+</body>
+
+</html>

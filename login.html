@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Menu</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/login-media.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <figure class="figure-logo">
+                <img src="./img/LOGO.png" alt="WAREHOUSE MANAGAMENT logo" class="logo">
+                <figcaption>
+                    <h2 class="title">WAREHOUSE MANAGAMENT</h2>
+                </figcaption>
+            </figure>
+            <form id="loginForm" class="login-form " action="./login.html" method="post">
+                <div class="input-group">
+                    <input class="input-login input-user" type="text" id="username" name="username" placeholder="Username"
+                        required>
+                </div>
+                <div class="input-group">
+                    <div class="password-wrapper">
+                        <input class="input-login" type="password" id="password" name="password" placeholder="Password"
+                            required>
+                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    </div>
+                </div>
+                <p class="link-descr forgot-link"><a href="#">Forgot Password?</a></p>
+                <button type="submit" class="btn-reset login-btn">Log in</button>
+            </form>
+            <div id="message"></div>
+            <p class="link-descr">Have not an account? <a class="" href="registerForm.html">Register</a></p>
+        </div>
+    </div>
+    <script defer src="./js/login.js"></script>
+</body>
+
+</html>

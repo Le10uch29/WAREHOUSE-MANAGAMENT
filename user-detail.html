@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/user-detail.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <script defer src="js/userDetail.js"></script>
+    <title>user Detail</title>
+</head>
+
+<body>
+    <header class="header" id="headr">
+        <nav class="nav" id="nav">
+            <a href="./user-list.html" class="nav__link">Back to List</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero__container" id="herocontainer">
+                <div class="img-content">
+                    <h1 style="display: none;">User detail</h1>
+                    <img id="userImg" src="./img/user-Bigprofile.png" class="profile-img">
+                    <div class="hero__content" id="herocontent">
+                        <h2 id="userFullName" class="hero__title"><span id="heroTitle"></span></h2>
+                        <p id="userUser" class="hero__descr">User<span id="spanRole"></span></p>
+                    </div>
+                    <button type="button" id="editBtn" class="btn-reset edit-btn">Edit Profile</button>
+                </div>
+
+                <div class="form-control">
+                    <form action="#" id="detailForm" class="detail-form">
+                        <div class="detail-input">
+                            <label><span>Username</span></label>
+                            <input type="text" class="input-control" id="Username">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Phone</span></label>
+                            <input type="number" class="input-control" id="userPhone">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Email</span></label>
+                            <input class="input-control" id="userEmail">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Gender</span></label>
+                            <select class="input-control" id="userGender" name="gender" data-text="Select Gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Password</span></label>
+                            <input type="Password" class="input-control" id="userPassword">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Role</span></label>
+                            <select class="input-control" id="userRole" name="role" data-text="Select Role">
+                                <option value="Admin">Admin</option>
+                                <option value="Staff">Staff</option>
+                                <option value="Mananger">Mananger</option>
+                            </select>
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Data Of Birthday</span></label>
+                            <input type="date" class="input-control" id="dobUser">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Position</span></label>
+                            <input type="text" class="input-control" id="userPosition">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Firstname</span></label>
+                            <input type="text" class="input-control" id="Firstname">
+                        </div>
+                        <div class="detail-input">
+                            <label><span>Lastname</span></label>
+                            <input type="text" class="input-control" id="Lastname">
+                        </div>
+                        <button type="submit" class="btn-reset update-btn" id="updateBtn">Update Profile</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
